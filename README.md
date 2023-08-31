@@ -7,25 +7,56 @@ This is a Python script that interacts with the Alpha Vantage API to retrieve an
 - Python 3.x
 - `requests` library (`pip install requests`)
 - `tabulate` library (`pip install tabulate`)
+- An API key from Alpha Vantage. You can sign up for a free API key on their [website](https://www.alphavantage.co/support/#api-key).
 
 ## Getting Started
 
 1. Clone this repository to your local machine or download the `project.py` file directly.
 2. Open a terminal or command prompt and navigate to the directory containing `project.py`.
 
+## API Rate Limits
+
+Please note that the Alpha Vantage API has rate limits: up to 5 API requests per minute and 100 requests per day. Make sure to stay within these limits to avoid any disruptions.
+
+## Installation
+
+1. Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/yourusername/Stock-Market-Quotes.git
+```
+
+2. Navigate to the cloned directory:
+
+```bash
+cd Stock-Market-Quotes
+```
+
+3. Install the required Python packages using pip:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Usage
 
-1. Run the script by executing the following command:
+1. Open a terminal and navigate to the directory where you cloned the repository.
 
-   ```shell
-   python project.py
-   ```
+2. Run the script using Python:
 
-2. The script will prompt you to enter the country name (e.g., "United States") and the stock ticker symbol you want to search for.
+```bash
+python project.py
+```
 
-3. You will need to provide an API key from Alpha Vantage to use this script. The script will prompt you to enter your API key.
+3. The script will prompt you for your Alpha Vantage API key, which you can obtain from their website.
 
-4. The script will display information about the searched stock, including its name, symbol, and currency.
+4. Enter the name of the country you want to search for. Valid options include: United States, Canada, United Kingdom, Germany, France, Spain, Portugal, Japan, India, Mainland China, Hong Kong, Brazil, Mexico, South Africa.
+
+5. The script will display the current market status for the selected country.
+
+6. You can then search for a stock ticker symbol by entering the company name. The script will display a table of matching symbols and names.
+
+7. After selecting a stock symbol from the table, the script will retrieve and display detailed information about that stock.
 
 ## Functionality
 
@@ -52,8 +83,6 @@ This function displays detailed information about a specific stock based on its 
 ## Note
 
 - The Alpha Vantage API key is required for using this script. If you encounter issues related to the API key, please ensure you have a valid key and have entered it correctly.
-- An API key from Alpha Vantage. You can sign up for a free API key on their [website](https://www.alphavantage.co/support/#api-key).
-
 ## Disclaimer
 
 This script is provided for educational and informational purposes only. The accuracy of the stock market data and the availability of the Alpha Vantage API are beyond the control of the script author.
@@ -61,3 +90,7 @@ This script is provided for educational and informational purposes only. The acc
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Feel free to contribute to the project, report issues, or suggest improvements. Happy investing! 📈
