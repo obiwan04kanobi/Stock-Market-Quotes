@@ -4,10 +4,22 @@ This is a Python script that interacts with the Alpha Vantage API to retrieve an
 
 ## Prerequisites
 
-- Python 3.x
-- `requests` library (`pip install requests`)
-- `tabulate` library (`pip install tabulate`)
-- `pwinput` library (`pip install pwinput`)
+- Python 3.0
+- `requests` library
+  ```bash
+  pip install requests
+  ```
+  
+- `tabulate` library
+  ```bash
+  pip install tabulate
+  ```
+  
+- `pwinput` library
+  ```bash
+  pip install pwinput
+  ```
+  
 - An API key from Alpha Vantage. You can sign up for a free API key on their [website](https://www.alphavantage.co/support/#api-key).
 
 ## Getting Started
