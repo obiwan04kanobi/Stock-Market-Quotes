@@ -41,12 +41,7 @@ def valid_country_name(country_name):
         "South Africa",
     ]
 
-    for name in valid_countries:
-        if name == country_name:
-            return True
-        else:
-            return False
-
+    return country_name in valid_countries
 
 # FUNCTION 2
 def market_status(country_name):
@@ -102,7 +97,7 @@ def stock_search(ticker, country_name, api_val):
 
 # FUNCTION 4
 def api_key():
-    print("Requests Limit ==> up to 5 API requests per minute and 100 requests per day")
+    print("\nRequests Limit ==> up to 5 API requests per minute and 100 requests per day")
     
     api_key_value = pwinput(prompt ="API Key: ", mask="*")
 
