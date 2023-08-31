@@ -1,6 +1,9 @@
 # Stock Market Data Retrieval Tool
 
 This is a Python script that interacts with the Alpha Vantage API to retrieve and display stock market data. It allows you to search for stock ticker symbols and display various information about the stocks, including their current values. The script uses the `requests` library for making API calls and the `tabulate` library for formatting and displaying tabular data.
+## Video Demo:
+
+- [Youtube](https://youtu.be/RXoP7_aIkpY)
 
 ## Prerequisites
 
@@ -25,6 +28,7 @@ This is a Python script that interacts with the Alpha Vantage API to retrieve an
 ## Getting Started
 
 1. Clone this repository to your local machine or download the `project.py` file directly.
+   
 2. Open a terminal or command prompt and navigate to the directory containing `project.py`.
 
 ## API Rate Limits
@@ -90,7 +94,6 @@ This function displays detailed information about a specific stock based on its 
 ## Note
 
 - The Alpha Vantage API key is required for using this script. If you encounter issues related to the API key, please ensure you have a valid key and have entered it correctly.
-- Video Demo: [Youtube](https://youtu.be/RXoP7_aIkpY)
 
 ## Disclaimer
 
