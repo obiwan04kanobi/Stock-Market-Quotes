@@ -9,7 +9,11 @@ def main():
     print("\nEnter Country Name")
     country_name = input("Country: ").strip().title()
 
-    valid_country_name(country_name)
+    valid_country_bool = valid_country_name(country_name)
+
+    if valid_country_bool == False:
+        sys.exit("Invalid Country Name")
+
 
     status = market_status(country_name)
     print(f"\nMarket is {status.title()}\n")
