@@ -1,4 +1,4 @@
 Python 3.0
 requests library pip install requests
 tabulate library pip install tabulate
-An API key from Alpha Vantage. You can sign up for a free API key on their website https://www.alphavantage.co/support/#api-key .
+An API key from Alpha Vantage. You can sign up for a free API key on their website (https://www.alphavantage.co/support/#api-key) .
