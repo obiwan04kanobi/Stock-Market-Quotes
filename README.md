@@ -14,19 +14,49 @@ This is a Python script that interacts with the Alpha Vantage API to retrieve an
 1. Clone this repository to your local machine or download the `project.py` file directly.
 2. Open a terminal or command prompt and navigate to the directory containing `project.py`.
 
+## API Rate Limits
+
+Please note that the Alpha Vantage API has rate limits: up to 5 API requests per minute and 100 requests per day. Make sure to stay within these limits to avoid any disruptions.
+
+## Installation
+
+1. Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/yourusername/stock-market-tool.git
+```
+
+2. Navigate to the cloned directory:
+
+```bash
+cd stock-market-tool
+```
+
+3. Install the required Python packages using pip:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Usage
 
-1. Run the script by executing the following command:
+1. Open a terminal and navigate to the directory where you cloned the repository.
 
-   ```shell
-   python project.py
-   ```
+2. Run the script using Python:
 
-2. The script will prompt you to enter the country name (e.g., "United States") and the stock ticker symbol you want to search for.
+```bash
+python stock_market_tool.py
+```
 
-3. You will need to provide an API key from Alpha Vantage to use this script. The script will prompt you to enter your API key.
+3. The script will prompt you for your Alpha Vantage API key, which you can obtain from their website.
 
-4. The script will display information about the searched stock, including its name, symbol, and currency.
+4. Enter the name of the country you want to search for. Valid options include: United States, Canada, United Kingdom, Germany, France, Spain, Portugal, Japan, India, Mainland China, Hong Kong, Brazil, Mexico, South Africa.
+
+5. The script will display the current market status for the selected country.
+
+6. You can then search for a stock ticker symbol by entering the company name. The script will display a table of matching symbols and names.
+
+7. After selecting a stock symbol from the table, the script will retrieve and display detailed information about that stock.
 
 ## Functionality
 
