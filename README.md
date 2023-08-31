@@ -32,12 +32,6 @@ git clone https://github.com/yourusername/Stock-Market-Quotes.git
 cd Stock-Market-Quotes
 ```
 
-3. Install the required Python packages using pip:
-
-```bash
-pip install -r requirements.txt
-```
-
 ## Usage
 
 1. Open a terminal and navigate to the directory where you cloned the repository.
