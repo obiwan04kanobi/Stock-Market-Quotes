@@ -23,13 +23,13 @@ Please note that the Alpha Vantage API has rate limits: up to 5 API requests per
 1. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/stock-market-tool.git
+git clone https://github.com/yourusername/Stock-Market-Quotes.git
 ```
 
 2. Navigate to the cloned directory:
 
 ```bash
-cd stock-market-tool
+cd Stock-Market-Quotes
 ```
 
 3. Install the required Python packages using pip:
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 2. Run the script using Python:
 
 ```bash
-python stock_market_tool.py
+python project.py
 ```
 
 3. The script will prompt you for your Alpha Vantage API key, which you can obtain from their website.
