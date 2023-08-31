@@ -90,3 +90,7 @@ This script is provided for educational and informational purposes only. The acc
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Feel free to contribute to the project, report issues, or suggest improvements. Happy investing! 📈
