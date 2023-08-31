@@ -1,18 +1,18 @@
 import requests
 import sys
 from tabulate import tabulate
-
+from pwinput import pwinput
 
 def main():
     api_val = api_key()
 
-    print("Enter Country Name")
+    print("\nEnter Country Name")
     country_name = input("Country: ").strip().title()
 
     valid_country_name(country_name)
 
     status = market_status(country_name)
-    print(f"Market is {status}\n")
+    print(f"\nMarket is {status.title()}\n")
 
     print("Search Stock Ticker Symbol: ")
     company_name = input("Search 🔎: ").strip().title()
@@ -103,13 +103,15 @@ def stock_search(ticker, country_name, api_val):
 # FUNCTION 4
 def api_key():
     print("Requests Limit ==> up to 5 API requests per minute and 100 requests per day")
-    api_key_value = input("API Key: ")
+    
+    api_key_value = pwinput(prompt ="API Key: ", mask="*")
+
     return api_key_value
 
 
 # FUNCTION 5
 def display_result(api_val):
-    stock_name = input("TICKER: ")
+    stock_name = input("\nTICKER: ")
     try:
         response = requests.get(
             f"https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol={stock_name}&apikey={api_val}"
