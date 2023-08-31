@@ -4,7 +4,7 @@ This is a Python script that interacts with the Alpha Vantage API to retrieve an
 
 ## Prerequisites
 
-- Python 3.x
+- Python 3.0
 - `requests` library
   ```bash
   pip install requests
