@@ -90,6 +90,8 @@ This function displays detailed information about a specific stock based on its 
 ## Note
 
 - The Alpha Vantage API key is required for using this script. If you encounter issues related to the API key, please ensure you have a valid key and have entered it correctly.
+- Video Demo: [Youtube](https://youtu.be/RXoP7_aIkpY)
+
 ## Disclaimer
 
 This script is provided for educational and informational purposes only. The accuracy of the stock market data and the availability of the Alpha Vantage API are beyond the control of the script author.
