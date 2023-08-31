@@ -4,7 +4,6 @@ from tabulate import tabulate
 
 
 def main():
-
     api_val = api_key()
 
     print("Enter Country Name")
@@ -51,7 +50,6 @@ def valid_country_name(country_name):
 
 # FUNCTION 2
 def market_status(country_name):
-
     response = requests.get(
         "https://www.alphavantage.co/query?function=MARKET_STATUS&apikey=demo"
     )
@@ -72,7 +70,6 @@ def market_status(country_name):
 # FUNCTION 3
 def stock_search(ticker, country_name, api_val):
     try:
-
         response = requests.get(
             f"https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords={ticker}&apikey={api_val}"
         )
@@ -83,9 +80,7 @@ def stock_search(ticker, country_name, api_val):
 
         # Filter entries based on the desired region
         filtered_entries = [
-            entry
-            for entry in best_matches_data
-            if entry["4. region"] == country_name
+            entry for entry in best_matches_data if entry["4. region"] == country_name
         ]
 
         # Convert each filtered dictionary into a list of key-value pairs
@@ -96,7 +91,7 @@ def stock_search(ticker, country_name, api_val):
 
         # Print the data in tabular format
         table_headers = ["Symbol and Name", "Currency"]
-        table = tabulate(table_data, headers=table_headers, tablefmt="grid")
+        table = tabulate(table_data, headers=table_headers, tablefmt="rounded_grid")
 
         # Print the formatted table
         print(table)
@@ -107,10 +102,7 @@ def stock_search(ticker, country_name, api_val):
 
 # FUNCTION 4
 def api_key():
-
-    print(
-        "Requests Limit ==> up to 5 API requests per minute and 100 requests per day"
-    )
+    print("Requests Limit ==> up to 5 API requests per minute and 100 requests per day")
     api_key_value = input("API Key: ")
     return api_key_value
 
@@ -119,7 +111,6 @@ def api_key():
 def display_result(api_val):
     stock_name = input("TICKER: ")
     try:
-
         response = requests.get(
             f"https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol={stock_name}&apikey={api_val}"
         )
