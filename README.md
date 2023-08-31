@@ -10,15 +10,15 @@ This is a Python script that interacts with the Alpha Vantage API to retrieve an
 
 ## Getting Started
 
-1. Clone this repository to your local machine or download the `main.py` file directly.
-2. Open a terminal or command prompt and navigate to the directory containing `main.py`.
+1. Clone this repository to your local machine or download the `project.py` file directly.
+2. Open a terminal or command prompt and navigate to the directory containing `project.py`.
 
 ## Usage
 
 1. Run the script by executing the following command:
 
    ```shell
-   python main.py
+   python project.py
    ```
 
 2. The script will prompt you to enter the country name (e.g., "United States") and the stock ticker symbol you want to search for.
@@ -52,6 +52,7 @@ This function displays detailed information about a specific stock based on its 
 ## Note
 
 - The Alpha Vantage API key is required for using this script. If you encounter issues related to the API key, please ensure you have a valid key and have entered it correctly.
+- An API key from Alpha Vantage. You can sign up for a free API key on their [website](https://www.alphavantage.co/support/#api-key).
 
 ## Disclaimer
 
