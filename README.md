@@ -3,7 +3,7 @@
 This is a Python script that interacts with the Alpha Vantage API to retrieve and display stock market data. It allows you to search for stock ticker symbols and display various information about the stocks, including their current values. The script uses the `requests` library for making API calls and the `tabulate` library for formatting and displaying tabular data.
 ## Video Demo:
 
-- [Youtube](https://youtu.be/RXoP7_aIkpY)
+- [Youtube](https://youtu.be/nft7UEm3_Rg)
 
 ## Prerequisites
 
