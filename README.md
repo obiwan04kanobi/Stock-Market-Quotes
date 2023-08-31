@@ -7,6 +7,7 @@ This is a Python script that interacts with the Alpha Vantage API to retrieve an
 - Python 3.x
 - `requests` library (`pip install requests`)
 - `tabulate` library (`pip install tabulate`)
+- An API key from Alpha Vantage. You can sign up for a free API key on their [website](https://www.alphavantage.co/support/#api-key).
 
 ## Getting Started
 
@@ -52,8 +53,6 @@ This function displays detailed information about a specific stock based on its 
 ## Note
 
 - The Alpha Vantage API key is required for using this script. If you encounter issues related to the API key, please ensure you have a valid key and have entered it correctly.
-- An API key from Alpha Vantage. You can sign up for a free API key on their [website](https://www.alphavantage.co/support/#api-key).
-
 ## Disclaimer
 
 This script is provided for educational and informational purposes only. The accuracy of the stock market data and the availability of the Alpha Vantage API are beyond the control of the script author.
